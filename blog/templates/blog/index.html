@@ -1,0 +1,15 @@
+ {% extends 'blog/layout.html' %}
+
+ {% block content %}
+ <h3 id ="announcements"> {{ title }}</h3>
+<ul class ="">
+	{% for blog in blog %}
+	<li class =""> <a href="/blog/details/{{blog.id}}">{{ blog.title }} </a> </li>
+	{% endfor %}
+</ul>	
+
+
+
+
+ {% endblock %}
+
